@@ -1,0 +1,6 @@
+framework module MUXSDKStatsJWPlayer {
+  umbrella header "MUXSDKStatsJWPlayer.h"
+
+  export *
+  module * { export * }
+}
