@@ -44,13 +44,16 @@ NS_ASSUME_NONNULL_END
 
 @implementation MUXSDKStatsBinding
 
-- (instancetype)initWithName:(NSString *)name software:(NSString *)software delegate:(id<JWPlayerDelegate>)delegate {
+- (instancetype)initWithName:(NSString *)name software:(NSString *)software delegate:(id<JWPlayerDelegate> _Nullable)delegate {
     if ((self = [super init])) {
         self.name = name;
         self.software = software;
 
         self.delegateProxy = [MUXJWPlayerSDKDelegateProxy alloc];
         [self.delegateProxy addDelegate:self];
+        if (delegate) {
+            [self.delegateProxy addDelegate:delegate];
+        }
     }
     return self;
 }
@@ -95,9 +98,18 @@ NS_ASSUME_NONNULL_END
         event.playerData.playerErrorMessage = error.description;
 
         NSError * jsonError = NULL;
-        NSData * errorData = [NSJSONSerialization dataWithJSONObject:error options:0 error:&error];
-        if (!jsonError) {
-            event.playerData.playeriOSErrorData = [[NSString alloc] initWithData:errorData encoding:NSUTF8StringEncoding];
+        NSData * jsonData = NULL;
+        //
+        // Sometimes, this throws 'Invalid top-level type in JSON write' and crashes the app
+        // you can simulate this error by passing in an invalid ad.tag URL to the JWAdConfig
+        //
+        // To protect against our error handling crashing the app, let's wrap it in a try/catch
+        //
+        @try {
+            jsonData = [NSJSONSerialization dataWithJSONObject:error options:0 error:&jsonError];
+        } @catch (NSException * e) {}
+        if (jsonData && !jsonError) {
+            event.playerData.playeriOSErrorData = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
         }
     }
 

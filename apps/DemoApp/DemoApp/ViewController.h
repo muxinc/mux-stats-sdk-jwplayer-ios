@@ -3,7 +3,7 @@
 
 @class MUXSDKImaListener;
 
-@interface ViewController : UIViewController {
+@interface ViewController : UIViewController  <JWPlayerDelegate> {
 }
 
 @end

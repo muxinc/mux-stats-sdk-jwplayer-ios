@@ -19,7 +19,7 @@ static NSMutableDictionary<NSString *, MUXSDKStatsBinding *> * __bindings;
 
 + (void)monitorJWPlayerController:(JWPlayerController *)controller
                              name:(NSString *)name
-                         delegate:(id<JWPlayerDelegate>)delegate
+                         delegate:(id<JWPlayerDelegate> _Nullable)delegate
                        playerData:(MUXSDKCustomerPlayerData *)playerData
                         videoData:(MUXSDKCustomerVideoData *)videoData {
     [self initSDK];
