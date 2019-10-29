@@ -5,8 +5,7 @@
 @import MUXSDKStatsJWPlayer;
 
 // TODO: Add your license keys
-static NSString * MUX_LICENSE_KEY = @"";
-static NSString * JWPLAYER_LICENSE_KEY = @"";
+static NSString * MUX_LICENSE_KEY = @"YOUR_MUX_KEY";
 static NSString * DEMO_PLAYER_NAME = @"demoplayer";
 
 @interface ViewController ()
@@ -16,10 +15,6 @@ static NSString * DEMO_PLAYER_NAME = @"demoplayer";
 @end
 
 @implementation ViewController
-
-- (void)viewDidLoad {
-    [JWPlayerController setPlayerKey:JWPLAYER_LICENSE_KEY];
-}
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
@@ -43,7 +38,7 @@ static NSString * DEMO_PLAYER_NAME = @"demoplayer";
     videoData.videoSeries = @"animation";
     [MUXSDKStatsJWPlayer monitorJWPlayerController:self.player
                                               name:DEMO_PLAYER_NAME
-                                          delegate:nil
+                                          delegate:self // delegate can be nil
                                         playerData:playerData
                                          videoData:videoData];
 
@@ -62,6 +57,10 @@ static NSString * DEMO_PLAYER_NAME = @"demoplayer";
         [self.player load:@[ item ]];
         [self.player play];
     });
+}
+
+- (void) onPlay:(JWEvent<JWStateChangeEvent> *)event {
+    NSLog(@"Example where I registered for the onPlay delegate in my application's ViewController JWEvent event: %@", event.description);
 }
 
 @end

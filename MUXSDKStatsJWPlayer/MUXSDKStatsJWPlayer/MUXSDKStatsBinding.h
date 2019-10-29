@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MUXSDKStatsBinding : NSObject
 
-- (instancetype)initWithName:(NSString *)name software:(NSString *)software delegate:(id<JWPlayerDelegate>)delegate;
+- (instancetype _Nonnull)initWithName:(NSString *)name software:(NSString *)software delegate:(id<JWPlayerDelegate> _Nullable)delegate;
 - (void)attachPlayer:(JWPlayerController *)player;
 - (void)detachPlayer;
 - (void)dispatchEvent:(Class)eventType checkVideoData:(BOOL)checkVideoData;
