@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Mux-Stats-JWPlayer'
 
-  s.version          = '0.1.0-beta.1'
+  s.version          = '0.1.0'
   s.source           = { :git => 'https://github.com/muxinc/mux-stats-sdk-jwplayer-ios.git',
                          :tag => "v#{s.version}" }
 
