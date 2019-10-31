@@ -8,12 +8,6 @@
 static NSString * MUX_LICENSE_KEY = @"YOUR_MUX_KEY";
 static NSString * DEMO_PLAYER_NAME = @"demoplayer";
 
-@interface ViewController ()
-
-@property (nonatomic, strong) JWPlayerController * player;
-
-@end
-
 @implementation ViewController
 
 - (void)viewDidAppear:(BOOL)animated {

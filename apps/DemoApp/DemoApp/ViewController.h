@@ -1,10 +1,9 @@
 #import <UIKit/UIKit.h>
 
-
-@class MUXSDKImaListener;
-
 @interface ViewController : UIViewController  <JWPlayerDelegate> {
 }
+
+@property (nonatomic, strong) JWPlayerController * player;
 
 @end
 
