@@ -1,27 +1,25 @@
 PODS:
   - JWPlayer-SDK (3.6.0)
   - Mux-Stats-Core (2.0.12)
-  - Mux-Stats-JWPlayer (0.1.0)
+  - Mux-Stats-JWPlayer (0.1.0):
+    - Mux-Stats-Core (~> 2.0)
 
 DEPENDENCIES:
   - JWPlayer-SDK (~> 3.0)
   - Mux-Stats-Core (~> 2.0)
-  - Mux-Stats-JWPlayer (from `../../`)
+  - Mux-Stats-JWPlayer (~> 0.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - JWPlayer-SDK
     - Mux-Stats-Core
-
-EXTERNAL SOURCES:
-  Mux-Stats-JWPlayer:
-    :path: "../../"
+    - Mux-Stats-JWPlayer
 
 SPEC CHECKSUMS:
   JWPlayer-SDK: d1c24878cc7663995222381ba81d9d35b253a028
   Mux-Stats-Core: 73e692799571459722526ff4a721b6872da5c776
-  Mux-Stats-JWPlayer: c355e560306d19f1bcc4f4c8e702257d703c245b
+  Mux-Stats-JWPlayer: c26cda217c2c49be13681207e5166cf6a519a2ae
 
-PODFILE CHECKSUM: af4a5c244ac5f96e7c2b9b4c8d6ef06b59df01d8
+PODFILE CHECKSUM: cb0878c57dc6d6a7bd2106b0b228de50d7a1e190
 
 COCOAPODS: 1.7.5

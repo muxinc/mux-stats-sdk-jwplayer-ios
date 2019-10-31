@@ -207,8 +207,8 @@
 				"${PODS_ROOT}/Target Support Files/Pods-DemoApp/Pods-DemoApp-frameworks.sh",
 				"${PODS_ROOT}/JWPlayer-SDK/JWPlayer_iOS_SDK.framework",
 				"${PODS_ROOT}/Mux-Stats-Core/Frameworks/iOS/fat/MuxCore.framework",
-				"${PODS_ROOT}/../../../Frameworks/iOS/fat/MUXSDKStatsJWPlayer.framework",
-				"${PODS_ROOT}/../../../Frameworks/iOS/fat/MUXSDKStatsJWPlayer.framework.dSYM",
+				"${PODS_ROOT}/Mux-Stats-JWPlayer/Frameworks/iOS/fat/MUXSDKStatsJWPlayer.framework",
+				"${PODS_ROOT}/Mux-Stats-JWPlayer/Frameworks/iOS/fat/MUXSDKStatsJWPlayer.framework.dSYM",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
