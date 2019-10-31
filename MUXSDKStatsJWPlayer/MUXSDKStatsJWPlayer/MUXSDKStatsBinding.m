@@ -159,7 +159,7 @@ NS_ASSUME_NONNULL_END
             data.videoSourceHeight = [NSNumber numberWithDouble:self.size.height];
         }
         if (self.duration > 0) {
-            data.videoSourceDuration = [NSNumber numberWithDouble:self.duration];
+            data.videoSourceDuration = [NSNumber numberWithDouble:(self.duration * 1000)];
         }
         if (self.isLive) {
             data.videoSourceIsLive = @"true";
