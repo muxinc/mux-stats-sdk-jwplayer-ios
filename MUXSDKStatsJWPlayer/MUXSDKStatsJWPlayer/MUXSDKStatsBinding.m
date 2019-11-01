@@ -132,6 +132,7 @@ NS_ASSUME_NONNULL_END
     data.playerIsFullscreen = self.player.fullscreen ? @"true" : @"false";
     data.playerIsPaused = [NSNumber numberWithBool:self.player.state == JWPlayerStatePaused];
     data.playerPlayheadTime = [NSNumber numberWithLong:self.player.position * 1000];
+    data.playerSoftwareVersion = [self.player.class SDKVersion];
     return data;
 }
 
@@ -158,7 +159,7 @@ NS_ASSUME_NONNULL_END
             data.videoSourceHeight = [NSNumber numberWithDouble:self.size.height];
         }
         if (self.duration > 0) {
-            data.videoSourceDuration = [NSNumber numberWithDouble:self.duration];
+            data.videoSourceDuration = [NSNumber numberWithDouble:(self.duration * 1000)];
         }
         if (self.isLive) {
             data.videoSourceIsLive = @"true";
