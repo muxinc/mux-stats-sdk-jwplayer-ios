@@ -244,6 +244,17 @@ NS_ASSUME_NONNULL_END
     }
 }
 
+- (void)onPlaylistItem:(JWEvent<JWPlaylistItemEvent> *)event {
+    NSString *sourceUrl = event.item.file;
+    if (sourceUrl) {
+        MUXSDKVideoData * data = [MUXSDKVideoData new];
+        [data setVideoSourceUrl:sourceUrl];
+        MUXSDKDataEvent * event = [MUXSDKDataEvent new];
+        event.videoData = data;
+        [MUXSDKCore dispatchEvent:event forPlayer:self.name];
+    }
+}
+
 - (void)onAdSkipped:(JWAdEvent<JWAdDetailEvent> *)event {
     [self dispatchEvent:MUXSDKAdEndedEvent.class checkVideoData:YES includeAdData:YES error:NULL];
     [self dispatchEvent:MUXSDKAdBreakEndEvent.class checkVideoData:YES includeAdData:YES error:NULL];
