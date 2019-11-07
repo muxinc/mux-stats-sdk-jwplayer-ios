@@ -8,9 +8,9 @@ mkdir -p Frameworks/iOS/simulator
 cd MUXSDKStatsJWPlayer
 
 # Build iOS release SDK
-xcodebuild -workspace 'MUXSDKStatsJWPlayer.xcworkspace' -configuration Release archive -scheme 'MUXSDKStatsJWPlayer' SYMROOT=$PWD/ios
+xcodebuild -workspace 'MUXSDKStatsJWPlayer.xcworkspace' -configuration Release archive -scheme 'MUXSDKStatsJWPlayer' -sdk iphoneos SYMROOT=$PWD/ios
 # Build iOS simulator SDK
-xcodebuild -workspace 'MUXSDKStatsJWPlayer.xcworkspace' -configuration Release -scheme 'MUXSDKStatsJWPlayer' -destination 'platform=iOS Simulator,name=iPhone 7' SYMROOT=$PWD/ios
+xcodebuild -workspace 'MUXSDKStatsJWPlayer.xcworkspace' -configuration Release -scheme 'MUXSDKStatsJWPlayer' -destination 'platform=iOS Simulator,name=iPhone 8' SYMROOT=$PWD/ios
 
 # Prepare the release .framework
 cp -R -L ios/Release-iphoneos/MUXSDKStatsJWPlayer.framework ios/MUXSDKStatsJWPlayer.framework

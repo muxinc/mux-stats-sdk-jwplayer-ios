@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A73586B145491622D6C19090 /* libPods-DemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D744D36372B6FFEAA662D2 /* libPods-DemoApp.a */; };
+		19785DBBF26ECF4A22745463 /* libPods-DemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D57C11155711EDDBAEC9B590 /* libPods-DemoApp.a */; };
 		F444D43D1DDB8EBF00FE804F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F444D43C1DDB8EBF00FE804F /* main.m */; };
 		F444D4401DDB8EBF00FE804F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F444D43F1DDB8EBF00FE804F /* AppDelegate.m */; };
 		F444D4431DDB8EBF00FE804F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F444D4421DDB8EBF00FE804F /* ViewController.m */; };
@@ -17,9 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		298363CC1A77FD16F6035444 /* Pods-DemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.release.xcconfig"; path = "Target Support Files/Pods-DemoApp/Pods-DemoApp.release.xcconfig"; sourceTree = "<group>"; };
-		59D744D36372B6FFEAA662D2 /* libPods-DemoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A59AB111FB705C6BD5ED31E8 /* Pods-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.debug.xcconfig"; path = "Target Support Files/Pods-DemoApp/Pods-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5DDD398D1C751C550AC9473A /* Pods-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.debug.xcconfig"; path = "Target Support Files/Pods-DemoApp/Pods-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CE2611B16BEB7DC3AB926C00 /* Pods-DemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.release.xcconfig"; path = "Target Support Files/Pods-DemoApp/Pods-DemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		D57C11155711EDDBAEC9B590 /* libPods-DemoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F444D4381DDB8EBF00FE804F /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F444D43C1DDB8EBF00FE804F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F444D43E1DDB8EBF00FE804F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,18 +38,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A73586B145491622D6C19090 /* libPods-DemoApp.a in Frameworks */,
+				19785DBBF26ECF4A22745463 /* libPods-DemoApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		589B39EC77220A3A534E453C /* Pods */ = {
+		E3B1BCA99B1D7692A057493A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A59AB111FB705C6BD5ED31E8 /* Pods-DemoApp.debug.xcconfig */,
-				298363CC1A77FD16F6035444 /* Pods-DemoApp.release.xcconfig */,
+				5DDD398D1C751C550AC9473A /* Pods-DemoApp.debug.xcconfig */,
+				CE2611B16BEB7DC3AB926C00 /* Pods-DemoApp.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -61,7 +61,7 @@
 				F444D43A1DDB8EBF00FE804F /* DemoApp */,
 				F444D4561DDBB14C00FE804F /* Frameworks */,
 				F444D4391DDB8EBF00FE804F /* Products */,
-				589B39EC77220A3A534E453C /* Pods */,
+				E3B1BCA99B1D7692A057493A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F444D4521DDBB14400FE804F /* MUXSDKStatsJWPlayer.framework */,
-				59D744D36372B6FFEAA662D2 /* libPods-DemoApp.a */,
+				D57C11155711EDDBAEC9B590 /* libPods-DemoApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,11 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F444D44F1DDB8EBF00FE804F /* Build configuration list for PBXNativeTarget "DemoApp" */;
 			buildPhases = (
-				C29B2C6F860269E172777B0B /* [CP] Check Pods Manifest.lock */,
+				DE99AA6D7A5FD5E82BEF6574 /* [CP] Check Pods Manifest.lock */,
 				F444D4341DDB8EBF00FE804F /* Sources */,
 				F444D4351DDB8EBF00FE804F /* Frameworks */,
 				F444D4361DDB8EBF00FE804F /* Resources */,
-				9049D2251AB839BD4172D5BA /* [CP] Embed Pods Frameworks */,
+				80EEF62C5EAF59FCC449FA1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,7 +176,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9049D2251AB839BD4172D5BA /* [CP] Embed Pods Frameworks */ = {
+		80EEF62C5EAF59FCC449FA1E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -185,8 +185,8 @@
 				"${PODS_ROOT}/Target Support Files/Pods-DemoApp/Pods-DemoApp-frameworks.sh",
 				"${PODS_ROOT}/JWPlayer-SDK/JWPlayer_iOS_SDK.framework",
 				"${PODS_ROOT}/Mux-Stats-Core/Frameworks/iOS/fat/MuxCore.framework",
-				"${PODS_ROOT}/Mux-Stats-JWPlayer/Frameworks/iOS/fat/MUXSDKStatsJWPlayer.framework",
-				"${PODS_ROOT}/Mux-Stats-JWPlayer/Frameworks/iOS/fat/MUXSDKStatsJWPlayer.framework.dSYM",
+				"${PODS_ROOT}/../../../Frameworks/iOS/fat/MUXSDKStatsJWPlayer.framework",
+				"${PODS_ROOT}/../../../Frameworks/iOS/fat/MUXSDKStatsJWPlayer.framework.dSYM",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -200,7 +200,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoApp/Pods-DemoApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C29B2C6F860269E172777B0B /* [CP] Check Pods Manifest.lock */ = {
+		DE99AA6D7A5FD5E82BEF6574 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -349,7 +349,7 @@
 		};
 		F444D4501DDB8EBF00FE804F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A59AB111FB705C6BD5ED31E8 /* Pods-DemoApp.debug.xcconfig */;
+			baseConfigurationReference = 5DDD398D1C751C550AC9473A /* Pods-DemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XX95P4Y787;
@@ -367,7 +367,7 @@
 		};
 		F444D4511DDB8EBF00FE804F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 298363CC1A77FD16F6035444 /* Pods-DemoApp.release.xcconfig */;
+			baseConfigurationReference = CE2611B16BEB7DC3AB926C00 /* Pods-DemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XX95P4Y787;
