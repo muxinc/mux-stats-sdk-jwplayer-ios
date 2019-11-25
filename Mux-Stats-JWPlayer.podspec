@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Mux-Stats-JWPlayer'
 
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.source           = { :git => 'https://github.com/muxinc/mux-stats-sdk-jwplayer-ios.git',
                          :tag => "v#{s.version}" }
 
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.license          = 'Apache 2.0'
   s.author           = { 'Mux' => 'ios-sdk@mux.com' }
 
-  s.dependency 'Mux-Stats-Core', '~>2.0'
+  s.dependency 'Mux-Stats-Core', '~>2.1'
 
   s.ios.deployment_target = '11.0'
   s.vendored_frameworks = 'Frameworks/iOS/fat/MUXSDKStatsJWPlayer.framework'
