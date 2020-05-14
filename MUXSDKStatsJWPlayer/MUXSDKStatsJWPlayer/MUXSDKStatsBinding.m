@@ -14,7 +14,7 @@
 
 @import MuxCore;
 
-NSString * const MUXSDKStatsKPluginName = @"jwplayer-mux";
+NSString * const MUXSDKStatsKPluginName = @"ios-jwplayer-mux";
 NSString * const MUXSDKStatsPluginVersion = @"0.1.0";
 
 typedef enum : NSUInteger {
